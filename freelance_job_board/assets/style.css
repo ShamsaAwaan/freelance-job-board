@@ -1,0 +1,125 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white; /* Add background to contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6d5dff 0%, #5a47ff 100%); /* Gradient background */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 15px 0;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.job-listing {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.job-listing h3 {
+    margin: 10px 0;
+}
+
+.job-listing p {
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #218838;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
